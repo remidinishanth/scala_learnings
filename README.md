@@ -11,3 +11,4 @@ Download slides from https://github.com/igorfyago/Coursera-Spec-Scala-Funtional-
 Cheat sheet: https://www.coursera.org/learn/scala-functional-programming/supplement/Sauv3/cheat-sheet
 
 Why Functional programming is becoming popular? https://madusudanan.com/blog/scala-tutorials-part-9-intro-to-functional-programming/
+* Moore’s law now achieved by increasing # of cores not clock cycles
