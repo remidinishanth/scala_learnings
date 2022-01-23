@@ -12,3 +12,8 @@ Cheat sheet: https://www.coursera.org/learn/scala-functional-programming/supplem
 
 Why Functional programming is becoming popular? https://madusudanan.com/blog/scala-tutorials-part-9-intro-to-functional-programming/
 * Moore’s law now achieved by increasing # of cores not clock cycles
+
+Concurrency and Parallelism 
+* Parallel programming: Execute programs faster on parallel hardware. 
+* Concurrent programming: Manage concurrent execution threads explicitly. 
+* Both are too hard!
