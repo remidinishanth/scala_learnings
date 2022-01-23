@@ -41,3 +41,18 @@ async { x = x * 2 } // can give 0, 1, 2
 * Safe and performant, with strong static typing
 
 This makes it suitable for both sequential and parallel programming
+
+### Different Tools for Different Purposes
+
+#### Parallelism :
+
+* Parallel Collections
+* Collections
+  - Distributed Collections
+  - Parallel DSLs
+
+#### Concurrency :
+Akka
+* Actors
+* Software transactional memory
+* Futures
