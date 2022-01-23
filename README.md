@@ -56,3 +56,21 @@ Akka
 * Actors
 * Software transactional memory
 * Futures
+
+### Class in Java vs Scala
+
+```java
+public class Person {
+  public final String name;
+  public final int age;
+  Person(String name, int age) {
+    this.name = name;
+    this.age = age;
+  }
+}
+```
+
+```scala
+class Person(val name: String,
+             val age: Int)
+```
