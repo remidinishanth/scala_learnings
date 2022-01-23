@@ -99,3 +99,31 @@ val (minors, adults) = people partition (_.age < 18)
 ```
 
 Here Scala uses simple pattern match for `(minors, adults)`, an infix method call for `partition`, a function value for `_.age < 18`
+
+If we want to process it parallely then we can just add `par`
+
+```scala
+val people: Array[Person]
+val (minors, adults) = people.par partition (_.age < 18)
+```
+
+### Actors for Concurrent Programming
+
+```scala
+class Person(val name: String, val age: Int)
+
+actor {
+  receive {
+  case people: Set[Person] =>
+    val (minors, adults) = 
+      people partition (_.age < 18)
+    Facebook ! minors
+    LinkedIn ! adults
+  }
+}
+```
+
+* Simple message-oriented programming model for multi-threading
+* Serializes access to shared resources using queues and function passing
+* Easier for programmers to create reliable concurrent processing
+* Many sources of contention, races, locking and dead-locks removed
