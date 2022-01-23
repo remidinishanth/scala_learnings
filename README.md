@@ -59,6 +59,52 @@ Akka
 
 ### Class in Java vs Scala
 
+#### Hello World
+
+```java
+public class HelloJava {
+    public static void main(String[] args) {
+        System.out.println("Hello World!");
+    }
+}
+```
+
+```scala
+object HelloScala {
+    def main(args: Array[String]): Unit = {
+        println("Hello World!")
+    }
+}
+```
+
+#### Simple list of Strings
+
+```java
+List<String> list = new ArrayList<String>();
+list.add("1");
+list.add("2");
+list.add("3");
+```
+
+```scala
+val list = List("1", "2", "3")
+```
+
+#### Converting list of strings to int
+
+```java
+List<Integer> ints = new ArrayList<Integer>();
+for (String s : list) {
+    ints.add(Integer.parseInt(s));
+}
+```
+
+```scala
+val ints = list.map(s => s.toInt)
+```
+
+#### Defining Person class
+
 ```java
 public class Person {
   public final String name;
