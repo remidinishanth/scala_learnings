@@ -9,6 +9,12 @@ To introduce a definition evaluated only when it is used, we use the keyword `de
 Recursive functions in scala
 * the return type can be omitted in non-recursive functions but it is required by the compiler for recursive functions
 
+Tail recursive function
+* calls itself as its last action - the last call of the function to itself is called tail call
+* represents an iterative process - tail recursive functions represent processes where the same procedure is repeated with modified inputs such as the greatest common divisor
+* can be annotated with @tailrec so that the compiler will succeed only if it can verify that the function is indeed tail recursive - The annotation verifies that a tail recursive function contains a tail - call to itself
+* can be optimized by reusing the stack frame - this is the main advantage of preferring tail recursive functions: the memory overhead is reduced and the number of iterations is not limited by the stack size
+
 Download slides from https://github.com/igorfyago/Coursera-Spec-Scala-Funtional-Programming-EPFL
 
 Cheat sheet: https://www.coursera.org/learn/scala-functional-programming/supplement/Sauv3/cheat-sheet
