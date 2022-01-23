@@ -32,3 +32,10 @@ async { x = x * 2 } // can give 0, 1, 2
 * So, `non-determinism = parallel processing + mutable state`
 * To get deterministic processing, avoid the mutable state! 
 * Avoiding mutable state means programming **functionally**. 
+
+
+### Scala is a Unifier 
+* Agile, with lightweight syntax 
+* Object-Oriented
+* Functional 
+* Safe and performant, with strong static typing
