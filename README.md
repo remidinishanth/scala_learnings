@@ -74,3 +74,28 @@ public class Person {
 class Person(val name: String,
              val age: Int)
 ```
+
+and its usage, splitting `people` into `minors` and `adults`
+
+```java
+import java.util.ArrayList;
+...
+Person[] people;
+Person[] minors;
+Person[] adults;
+{
+  ArrayList<Person> minorsList = new ArrayList<Person>();
+  ArrayList<Person> adultsList = new ArrayList<Person>();
+  for(int i = 0; i < people.length; i++)
+    (people[i].age < 18 ? minorsList: adultsList).add(people[i]);
+  minors = minorsList.toArray(people);
+  adults = adultsList.toArray(people);
+}
+```
+
+```scala
+val people: Array[Person]
+val (minors, adults) = people partition (_.age < 18)
+```
+
+Here Scala uses simple pattern match for `(minors, adults)`, an infix method call for `partition`, a function value for `_.age < 18`
