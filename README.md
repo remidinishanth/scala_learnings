@@ -9,3 +9,5 @@ To introduce a definition evaluated only when it is used, we use the keyword `de
 Download slides from https://github.com/igorfyago/Coursera-Spec-Scala-Funtional-Programming-EPFL
 
 Cheat sheet: https://www.coursera.org/learn/scala-functional-programming/supplement/Sauv3/cheat-sheet
+
+Why Functional programming is becoming popular? https://madusudanan.com/blog/scala-tutorials-part-9-intro-to-functional-programming/
