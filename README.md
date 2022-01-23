@@ -13,7 +13,22 @@ Cheat sheet: https://www.coursera.org/learn/scala-functional-programming/supplem
 Why Functional programming is becoming popular? https://madusudanan.com/blog/scala-tutorials-part-9-intro-to-functional-programming/
 * Moore’s law now achieved by increasing # of cores not clock cycles
 
-Concurrency and Parallelism 
+### Concurrency and Parallelism 
 * Parallel programming: Execute programs faster on parallel hardware. 
 * Concurrent programming: Manage concurrent execution threads explicitly. 
 * Both are too hard!
+
+
+### The Root of The Problem 
+
+```scala
+var x = 0 
+async { x = x + 1 } 
+async { x = x * 2 } // can give 0, 1, 2
+```
+
+* Non-determinism caused by concurrent threads accessing shared mutable state. 
+* It helps to encapsulate state in actors or transactions, but the fundamental problem stays the same. 
+* So, `non-determinism = parallel processing + mutable state`
+* To get deterministic processing, avoid the mutable state! 
+* Avoiding mutable state means programming **functionally**. 
