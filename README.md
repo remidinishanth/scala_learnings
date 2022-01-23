@@ -39,3 +39,5 @@ async { x = x * 2 } // can give 0, 1, 2
 * Object-Oriented
 * Functional 
 * Safe and performant, with strong static typing
+
+This makes it suitable for both sequential and parallel programming
