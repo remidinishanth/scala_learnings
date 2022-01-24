@@ -2,7 +2,17 @@
 
 Learning scala from Coursera EPFL
 
+### Imperative languages vs Functional programming
+In imperative languages you get things done by giving the computer a sequence of tasks and then it executes them. While executing them, it can change state. For instance, you set variable `a` to `5` and then do some stuff and then set it to something else. You have control flow structures for doing some action several times.
 
+In purely functional programming you don't tell the computer what to do as such but rather you tell it what stuff is. The factorial of a number is the product of all the numbers from 1 to that number, the sum of a list of numbers is the first number plus the sum of all the other numbers, and so on. You express that in the form of functions.
+
+You also can't set a variable to something and then set it to something else later. If you say that a is 5, you can't say it's something else later because you just said it was 5. What are you, some kind of liar? 
+
+So in purely functional languages, a function has no side-effects. The only thing a function can do is calculate something and return it as a result. At first, this seems kind of limiting but it actually has some very nice consequences: if a function is called twice with the same parameters, it's guaranteed to return the same result. That's called referential transparency and not only does it allow the compiler to reason about the program's behavior, but it also allows you to easily deduce (and even prove) that a function is correct and then build more complex functions by gluing simple functions together.
+
+
+### EPFL notes
 To introduce a definition evaluated only when it is used, we use the keyword `def`: 
 * `def` introduces a definition where the right hand side is evaluated on each use
 
