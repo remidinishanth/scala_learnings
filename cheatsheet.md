@@ -1,5 +1,9 @@
-This cheat sheet originated from the coursera forum, credits to Laurent Poulain.
+---
+layout: page
+title: Cheat Sheet
+---
 
+This cheat sheet originated from the forum, credits to Laurent Poulain.
 We copied it and changed or added a few things.
 There are certainly a lot of things that can be improved! If you would like to contribute, you have two options:
 
