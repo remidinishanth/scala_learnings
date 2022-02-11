@@ -4,4 +4,6 @@ representation. This abstraction allows us to freely hide, add or aggregate fiel
 
 REF: https://scalac.io/wp-content/uploads/GraphQL-Scala.pdf, https://www.howtographql.com/graphql-scala/3-handling-arguments/
 
+https://www.howtographql.com/graphql-scala/3-handling-arguments/ explains about `ctx.arg(???)`
+
 * Go thru these demos in sequence to understand better https://github.com/OlegIlyenko/sangria-scalaio-demo/tree/master/src/main/scala/demos
