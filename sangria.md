@@ -2,4 +2,4 @@
 type `ObjectType`. It allows us to decouple API/Sangria models from database
 representation. This abstraction allows us to freely hide, add or aggregate fields.
 
-REF: https://scalac.io/wp-content/uploads/GraphQL-Scala.pdf
+REF: https://scalac.io/wp-content/uploads/GraphQL-Scala.pdf, https://www.howtographql.com/graphql-scala/3-handling-arguments/
