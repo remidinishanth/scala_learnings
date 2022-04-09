@@ -194,3 +194,6 @@ actor {
 * Serializes access to shared resources using queues and function passing
 * Easier for programmers to create reliable concurrent processing
 * Many sources of contention, races, locking and dead-locks removed
+
+
+Read about **Companion objects**: A companion object is an object with the same name as a class or trait and is defined in the same source file as the associated file or trait. 
