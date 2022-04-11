@@ -196,4 +196,4 @@ actor {
 * Many sources of contention, races, locking and dead-locks removed
 
 
-Read about **Companion objects**: A companion object is an object with the same name as a class or trait and is defined in the same source file as the associated file or trait. 
+Read about **Companion objects**: A companion object is an object with the same name as a class or trait and is defined in the same source file as the associated file or trait. Ref: https://docs.scala-lang.org/overviews/scala-book/companion-objects.html
